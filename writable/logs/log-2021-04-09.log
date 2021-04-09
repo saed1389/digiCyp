@@ -1,0 +1,9 @@
+CRITICAL - 2021-04-09 06:27:54 --> Invalid file: template/header.php
+#0 /Applications/MAMP/htdocs/liveApp/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 /Applications/MAMP/htdocs/liveApp/system/Common.php(1217): CodeIgniter\View\View->render('template/header...', Array, true)
+#2 /Applications/MAMP/htdocs/liveApp/app/Controllers/Page.php(9): view('template/header...')
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(936): App\Controllers\Page->about()
+#4 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#5 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

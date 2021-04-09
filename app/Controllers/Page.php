@@ -4,15 +4,17 @@ class Page extends BaseController {
 	
 	public function about($param = "Guest") {
 		$data = [
-			'name' => 'Saed Ghaffari'
+			'name' => 'Saed Ghaffari',
+			'title' => 'About Us'
 		];
-		return view ('about', $data);
+		echo view ('about', $data);
 	}
 	
 	public function contact(){
 		$data = [
-			'email' => 'saed.1389@gmail.com'
+			'email' => 'saed.1389@gmail.com',
+			'title' => 'Contact Us'
 		];
-		return view ('contact', $data);
+		echo view ('contact', $data);
 	}
 }
