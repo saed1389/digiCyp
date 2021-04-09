@@ -1,6 +1,7 @@
 <?php namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
+use CodeIgniter\I18n\Time;
 
 class Users extends Migration {
 	public function up () {
@@ -26,11 +27,11 @@ class Users extends Migration {
 			],
 			'create_at'  => [
 				'type'      =>  'TIMESTAMP',
-				'default'   =>  Date()
+				'default'   =>  Time::now ('Europe/Istanbul', 'en_EN')
 			],
 			'updated_at'  => [
 				'type'      =>  'TIMESTAMP',
-				'default'   =>  Date()
+				'default'   =>  Time::now ('Europe/Istanbul', 'en_EN')
 			],
 		]);
 		$this->forge->addKey ('id', true);
