@@ -27,11 +27,11 @@ class Users extends Migration {
 			],
 			'create_at'  => [
 				'type'      =>  'TIMESTAMP',
-				'default'   =>  Time::now ('Europe/Istanbul', 'en_EN')
+				'null'      => false
 			],
 			'updated_at'  => [
 				'type'      =>  'TIMESTAMP',
-				'default'   =>  Time::now ('Europe/Istanbul', 'en_EN')
+				'null'      => false
 			],
 		]);
 		$this->forge->addKey ('id', true);
