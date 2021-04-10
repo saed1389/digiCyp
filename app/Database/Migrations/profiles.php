@@ -1,7 +1,6 @@
 <?php namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
-use CodeIgniter\I18n\Time;
 
 class Profiles extends Migration {
 	public function up () {
