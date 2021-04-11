@@ -6,6 +6,10 @@ use App\Models\UserModel;
 
 class Home extends BaseController
 {
+	public function __construct () {
+		helper (['mytext', 'text']);
+	}
+	
 	public function index()
 	{
 		//$query  = $this->db->query ("SELECT * FROM users WHERE id = 1");
@@ -26,16 +30,17 @@ class Home extends BaseController
 		//$userModel = new \App\Model\UserModel();
 		//$userModel = model ('App\Model\UserModel', false, $this->db);
 		//$userModel = model ('App\Model\UserModel');
-		$userModel = new UserModel();
-		$user = $userModel->find (1);
-		$user['email'] = 'test@admin.com';
-		$userModel->save ($user);
+//		$userModel = new UserModel();
+//		$user = $userModel->find (1);
+//		$user['email'] = 'test@admin.com';
+//		$userModel->save ($user);
 //		$date = [
 //			'username' => 'admin',
 //			'password' => password_hash ('secret', PASSWORD_DEFAULT),
 //			'email'    => 'admin@admin.com'
 //		];
 //		$user = $userModel->insert ($date);
-		var_dump ($user);
+		
+		//var_dump  (MONTH);
 	}
 }
