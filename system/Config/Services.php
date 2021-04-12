@@ -698,7 +698,7 @@ class Services extends BaseService
 		{
 			return static::getSharedInstance('session', $config);
 		}
-
+		//$config = (object)['sessionCookieName' => 'digicyp_cookie'];
 		$config = $config ?? config('App');
 		$logger = static::logger();
 

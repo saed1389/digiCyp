@@ -1,6 +1,4 @@
-<?php
-
-namespace App\Controllers;
+<?php namespace App\Controllers;
 
 use App\Models\UserModel;
 
@@ -25,7 +23,7 @@ class Home extends BaseController
 		//$query = $table->getWhere(['id' => 1]);
 		//$results = $query->getRow();
 		//var_dump ($results);
-		//return view('welcome_message');
+		
 		
 		//$userModel = new \App\Model\UserModel();
 		//$userModel = model ('App\Model\UserModel', false, $this->db);
@@ -42,5 +40,8 @@ class Home extends BaseController
 //		$user = $userModel->insert ($date);
 		
 		//var_dump  (MONTH);
+		
+		//$this->session->destroy();
+		return view('welcome_message');
 	}
 }

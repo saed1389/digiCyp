@@ -218,7 +218,9 @@
 	</div>
 
 	<div class="heroe">
-
+        <?php if( session ()->getFlashData('message')) :  ?>
+        <p class="alert alert-success"><?= session ()->getFlashdata ('message') ?></p>
+        <?php endif;  ?>
 		<h1>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
 
 		<h2>The small framework with powerful features</h2>

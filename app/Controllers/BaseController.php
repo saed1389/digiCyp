@@ -6,6 +6,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use Config\Services;
 
 /**
  * Class BaseController
@@ -28,6 +29,7 @@ class BaseController extends Controller
 	 * @var array
 	 */
 	protected $helpers = ['form'];
+	protected $session = null;
 	//protected $db;
 
 	/**
@@ -45,7 +47,8 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
-		// E.g.: $this->session = \Config\Services::session();
-		$this->db = db_connect ('default');
+		//$config = (object)['sessionCookieName' => 'digicyp_cookie'];
+		$this->session = Services::session();
+		//$this->db = db_connect ('default');
 	}
 }

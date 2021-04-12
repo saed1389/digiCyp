@@ -8,7 +8,8 @@
 </div>
 
 <div class="col-md-6">
-    <h1>Contact Via <?= $email  ?></h1>
+    <?php session ()->set ("name", "Ghaffari")  ?>
+    <h1>Contact Via <?= $email  ?> Name : <?= session()->has ('name') ? session ()->get ('name'): "Default" ?></h1>
 	
     <?= $c_f['form_open'] ?>
     <?= csrf_field ()  ?>
