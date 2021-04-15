@@ -6,6 +6,8 @@ use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
+use App\Filters\LoggedIn;
+use App\Filters\GuestFilter;
 
 class Filters extends BaseConfig
 {
@@ -16,9 +18,11 @@ class Filters extends BaseConfig
 	 * @var array
 	 */
 	public $aliases = [
-		'csrf'     => CSRF::class,
-		'toolbar'  => DebugToolbar::class,
-		'honeypot' => Honeypot::class,
+		'csrf'       => CSRF::class,
+		'toolbar'    => DebugToolbar::class,
+		'honeypot'   => Honeypot::class,
+		'isLoggedIn' => LoggedIn::class,
+		'guest'      => GuestFilter::class,
 	];
 
 	/**

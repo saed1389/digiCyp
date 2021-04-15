@@ -1,0 +1,42 @@
+CRITICAL - 2021-04-15 03:40:59 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 /Applications/MAMP/htdocs/liveApp/system/Router/Router.php(156): CodeIgniter\Router\RouteCollection->getFilterForRoute('home')
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('home')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-15 03:48:29 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 /Applications/MAMP/htdocs/liveApp/system/Router/Router.php(156): CodeIgniter\Router\RouteCollection->getFilterForRoute('home')
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('home')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-15 03:48:52 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 /Applications/MAMP/htdocs/liveApp/system/Router/Router.php(156): CodeIgniter\Router\RouteCollection->getFilterForRoute('home')
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('home')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-15 03:50:05 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 /Applications/MAMP/htdocs/liveApp/system/Router/Router.php(156): CodeIgniter\Router\RouteCollection->getFilterForRoute('home')
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('home')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-15 03:50:07 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 /Applications/MAMP/htdocs/liveApp/system/Router/Router.php(156): CodeIgniter\Router\RouteCollection->getFilterForRoute('home')
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('home')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-15 03:50:12 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 /Applications/MAMP/htdocs/liveApp/system/Router/Router.php(156): CodeIgniter\Router\RouteCollection->getFilterForRoute('home')
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('home')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

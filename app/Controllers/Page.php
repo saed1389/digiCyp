@@ -43,5 +43,11 @@ class Page extends BaseController {
 			];
 		return view ('contact', $data);
 	}
+	public function register() {
+		return view ('register');
+	}
+	public function login() {
+		return view ('login');
+	}
 	
 }

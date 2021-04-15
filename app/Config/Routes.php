@@ -34,10 +34,15 @@ $routes->setAutoRoute(false);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Page::login');
+$routes->get('home', 'Home::index', ['filter'=> 'isLoggedIn']);
 $routes->get('about', 'Page::about');
 $routes->match(['get', 'post'],'contact', 'Page::contact');
-
+$routes->get('register', 'Page::register', ['filer' => 'guest']);
+$routes->post('register', 'User::register', ['filer' => 'guest']);
+$routes->get('login', 'Page::login', ['filer' => 'guest']);
+$routes->post('login', 'User::login', ['filer' => 'guest']);
+$routes->get('logout', 'User::logout', ['filter'=> 'isLoggedIn']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

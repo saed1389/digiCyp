@@ -7,6 +7,10 @@ class ProfileModel extends Model {
 	protected $DBGroup = 'default';
 	protected $allowedFields = ['user_id', 'name', 'address', 'city', 'state', 'country'];
 	protected $useTimestamps = true;
-	protected $validationRules = [];
+	protected $validationRules = [
+		'name'      => 'required|alpha_numeric_space|min_length[3]',
+		'user_id'   => 'required|is_unique[profiles.user_id]',
+	];
 	protected $validationMessages = [];
+	
 }

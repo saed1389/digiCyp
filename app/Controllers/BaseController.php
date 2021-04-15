@@ -5,6 +5,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use Config\Database;
 use Psr\Log\LoggerInterface;
 use Config\Services;
 
@@ -30,7 +31,7 @@ class BaseController extends Controller
 	 */
 	protected $helpers = ['form'];
 	protected $session = null;
-	//protected $db;
+	protected $db;
 
 	/**
 	 * Constructor.
@@ -48,7 +49,7 @@ class BaseController extends Controller
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
 		//$config = (object)['sessionCookieName' => 'digicyp_cookie'];
+		$this->db = Database::connect ();
 		$this->session = Services::session();
-		//$this->db = db_connect ('default');
 	}
 }
