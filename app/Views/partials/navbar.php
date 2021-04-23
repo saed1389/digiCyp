@@ -11,15 +11,18 @@
 				<li class="nav-item">
 					<a href="<?= base_url ('home'); ?>" class="nav-link">Home <span class="sr-only">(Current)</span></a>
 				</li>
+                <?php if (!loggedIn ()) :  ?>
 				<li class="nav-item">
 					<a href="<?= base_url ('register'); ?>" class="nav-link">Register </a>
 				</li>
 				<li class="nav-item">
 					<a href="<?= base_url ('login'); ?>" class="nav-link">Login </a>
 				</li>
+                <?php else :  ?>
 				<li class="nav-item">
 					<a href="<?= base_url ('logout'); ?>" class="nav-link">Logout </a>
 				</li>
+                <?php endif;  ?>
 			</ul>
 		</div>
 	</div>

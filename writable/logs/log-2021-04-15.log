@@ -40,3 +40,57 @@ CRITICAL - 2021-04-15 03:50:12 --> Return value of CodeIgniter\Router\RouteColle
 #3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2021-04-15 06:17:04 --> Call to a member function get() on null
+#0 /Applications/MAMP/htdocs/liveApp/app/Views/partials/navbar.php(14): loggedIn()
+#1 /Applications/MAMP/htdocs/liveApp/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/liveApp/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/liveApp/system/View/View.php(468): CodeIgniter\View\View->render('partials/navbar', NULL, true)
+#4 /Applications/MAMP/htdocs/liveApp/app/Views/template/base.php(14): CodeIgniter\View\View->include('partials/navbar')
+#5 /Applications/MAMP/htdocs/liveApp/system/View/View.php(220): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/liveApp/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/liveApp/system/View/View.php(236): CodeIgniter\View\View->render('template/base', Array, true)
+#8 /Applications/MAMP/htdocs/liveApp/system/Common.php(1217): CodeIgniter\View\View->render('login', Array, true)
+#9 /Applications/MAMP/htdocs/liveApp/app/Controllers/Page.php(50): view('login')
+#10 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(936): App\Controllers\Page->login()
+#11 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#12 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-04-15 06:20:18 --> Trying to access array offset on value of type bool
+#0 /Applications/MAMP/htdocs/liveApp/app/Helpers/auth_helper.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Applications/M...', 9, Array)
+#1 /Applications/MAMP/htdocs/liveApp/app/Views/partials/navbar.php(14): loggedIn()
+#2 /Applications/MAMP/htdocs/liveApp/system/View/View.php(220): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/liveApp/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /Applications/MAMP/htdocs/liveApp/system/View/View.php(468): CodeIgniter\View\View->render('partials/navbar', NULL, true)
+#5 /Applications/MAMP/htdocs/liveApp/app/Views/template/base.php(14): CodeIgniter\View\View->include('partials/navbar')
+#6 /Applications/MAMP/htdocs/liveApp/system/View/View.php(220): include('/Applications/M...')
+#7 /Applications/MAMP/htdocs/liveApp/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /Applications/MAMP/htdocs/liveApp/system/View/View.php(236): CodeIgniter\View\View->render('template/base', Array, true)
+#9 /Applications/MAMP/htdocs/liveApp/system/Common.php(1217): CodeIgniter\View\View->render('login', Array, true)
+#10 /Applications/MAMP/htdocs/liveApp/app/Controllers/Page.php(50): view('login')
+#11 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(936): App\Controllers\Page->login()
+#12 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#13 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-04-15 07:19:22 --> Argument 2 passed to view() must be of the type array, null given, called in /Applications/MAMP/htdocs/liveApp/app/Controllers/User.php on line 45
+#0 /Applications/MAMP/htdocs/liveApp/app/Controllers/User.php(45): view('profile', NULL)
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(936): App\Controllers\User->profile('1')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-15 07:20:13 --> Argument 2 passed to view() must be of the type array, null given, called in /Applications/MAMP/htdocs/liveApp/app/Controllers/User.php on line 45
+#0 /Applications/MAMP/htdocs/liveApp/app/Controllers/User.php(45): view('profile', NULL)
+#1 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(936): App\Controllers\User->profile('5')
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-15 14:16:00 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/liveApp/app/Filters/GuestFilter.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Applications/M...', 11, Array)
+#1 /Applications/MAMP/htdocs/liveApp/system/Filters/Filters.php(181): App\Filters\GuestFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('/', 'before')
+#3 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

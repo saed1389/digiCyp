@@ -207,13 +207,14 @@
 			<li class="menu-toggle">
 				<button onclick="toggleMenu();">&#9776;</button>
 			</li>
-			<li class="menu-item hidden"><a href="#">Home</a></li>
-			<li class="menu-item hidden"><a href="https://codeigniter4.github.io/userguide/" target="_blank">Docs</a>
-			</li>
-			<li class="menu-item hidden"><a href="https://forum.codeigniter.com/" target="_blank">Community</a></li>
-			<li class="menu-item hidden"><a
-					href="https://github.com/codeigniter4/CodeIgniter4/blob/master/CONTRIBUTING.md" target="_blank">Contribute</a>
-			</li>
+   
+			<li class="menu-item hidden"><a href="<?php base_url ()  ?>">Home</a></li>
+			<?php if (!loggedIn ()) : ?>
+			<li class="menu-item hidden"><a href="<?php base_url ('register')  ?>" target="_blank">Register</a></li>
+			<li class="menu-item hidden"><a href="<?php base_url ('login')  ?>" target="_blank">Login</a></li>
+            <?php else:  ?>
+			<li class="menu-item hidden"><a href="<?php base_url ('logout')  ?>" target="_blank">Logout</a></li>
+            <?php endif;  ?>
 		</ul>
 	</div>
 
