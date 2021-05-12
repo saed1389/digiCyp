@@ -1,0 +1,21 @@
+<?php
+return [
+	'title' => 'Full Services of Our Digital Agency',
+	'headingText' => 'Creating digital experiences that help businesses grow. Our integrated digital services combine strategy, creativity and execution with a results-driven approach.',
+	'localSeo' => 'Local Search Strategy',
+	'localSeoD' => 'Local search marketing is all about putting your business on the map in local searches when customers are searching for a business like yours. For a more formal definition, local search marketing is a form of search engine optimization that helps local businesses show up in relevant local searches.',
+	'map' => 'Maps Search',
+	'mapD' => 'Everyone has their favorite Google app, and mine is – without a doubt – Google Maps. Sure, Google Now is incredibly impressive (and getting better all the time, thanks to Google’s artificial intelligence, RankBrain), but Maps is one of the apps that Google has spent the most time refining and improving, and the results speak for themselves.',
+	'link' => 'Link Building & Content',
+	'linkD' => 'Link building is when you get other websites or blogs to link to your site\'s page in order to improve your search engine rankings. The engines crawl the web looking for links between your web pages and other websites to decide how valid your content is and thus where your page should rank in their search results.',
+	'edit' => 'Video Editing',
+	'editD' => 'Video editing is the manipulation and arrangement of video shots. Video editing is used to structure and present all video information, including films and television shows, video advertisements and video essays.',
+	'web' => 'Custom Website Design',
+	'webD' => 'Get a professional website design that will make a great impact on your online appearance. Our creative team will provide you with customized solutions! Meet our Team - Let\'s talk! Free Strategy Session. Social Media Marketing. Web Design & Development. Content Marketing.',
+	'email' => 'Custom Email Design',
+	'emailD' => 'A custom email template is an email template that a company creates using its brand identity — colors, fonts, etc. — to use multiple times by adding different text and images to meet the particular email marketing goal.',
+	'product' => 'Our Product Based Services',
+	'productD' => 'Creating digital experiences that help businesses grow. Our integrated digital services combine strategy, creativity and execution with a results-driven approach',
+	'p1' => 'We are proficient in several fronts and back-end technologies that allow us to build consistent and high-performing products.',
+	'p2' => 'We build quality-rich websites and mobile/web applications with endeavors to push our boundaries and always improve. This allows us to commercialize your ideas, through coding and technological excellence.',
+];

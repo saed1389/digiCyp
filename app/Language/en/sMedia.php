@@ -1,0 +1,23 @@
+<?php
+return [
+	'socialMedia' => 'Social Media Marketing Services',
+	'socialMediaD' => 'Facebook, Twitter, Instagram, and many other networks are simply a part of daily life for millions – in fact, billions – of us. The ubiquitous use of Facebook extends to more than a quarter of the earth\'s population- that’s more than 2 billion active users.',
+	's1' => 'Brand Monitoring',
+	's2' => 'Social Media Management',
+	's3' => 'Setup & Custom Profile Design',
+	's4' => 'Social Media Contests',
+	'proTools' => 'Professional Tools for Your Business',
+	'pro1' => 'Brand Monitoring',
+	'pro1D' => 'Track mentions to your Brand and Products, Competitors, Industry. Manage your Brand’s online reputation, get mention insights and grow sales.',
+	'pro2' => 'Social Media Contests',
+	'pro2D' => 'Want to engage customers online? Social media can be a great way to get your customers involved and really create conversations with your target audience. But you need something to actually get that engagement started.',
+	'pro3' => 'Social Media Management',
+	'pro3D' => 'The business potential of social networks is immense. Brands can leverage social media platforms to successfully drive their objectives across the marketing funnel, from raising brand awareness to increasing store visits.',
+	'pro4' => 'Setup & Custom Profile Design',
+	'pro4D' => 'From basic profile setup to enhanced graphic and design elements and ongoing content promotion, we create social media profiles for your business that represent your company well and attract the customers you want.',
+	'smp' => 'Social Media Promotion',
+	'smp1' => 'Content Marketing',
+	'smp1D' => 'Traditional marketing is becoming less and less effective by the minute; as a forward-thinking marketer, you know there has to be a better way.',
+	'smp2' => 'Great Rankings',
+	'smp2D' => 'As you may know, SEO stands for search engine optimization, which simply means making the web pages more likely to get ranked on a search engine. But let’s be honest: at this point, that really just means Google.',
+];

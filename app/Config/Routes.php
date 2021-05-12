@@ -3,8 +3,6 @@
 namespace Config;
 
 // Create a new instance of our RouteCollection class.
-use App\Controllers\Page;
-
 $routes = Services::routes();
 
 // Load the system's routing file first, so that the app and ENVIRONMENT
@@ -24,7 +22,7 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(false);
+$routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -34,18 +32,19 @@ $routes->setAutoRoute(false);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Page::login', ['filter' => 'guest']);
-$routes->get('home', 'Home::index', ['filter'=> 'isLoggedIn']);
-$routes->get('about', 'Page::about');
+$routes->get('lang/{locale}', 'Language::index');
+$routes->get('about-us-digital-marketing-agency', 'Page::about');
+$routes->get('local-SEO', 'Page::localSeo');
+$routes->get('Email-Marketing', 'Page::emailMarketing');
+$routes->get('Social-Media-Marketing', 'Page::socialMediaMarketing');
+$routes->get('search-engine-optimization-seo', 'Page::SearchEO');
+$routes->get('Website-Design', 'Page::webDesign');
+$routes->get('Video-Editing-Services', 'Page::videoEdit');
+$routes->get('digital-marketing-services', 'Page::services');
+$routes->get('blog', 'Page::blog');
+$routes->get('references', 'Page::references');
 $routes->match(['get', 'post'],'contact', 'Page::contact');
-$routes->get('register', 'Page::register', ['filer' => 'guest']);
-$routes->post('register', 'User::register', ['filer' => 'guest']);
-$routes->get('login', 'Page::login', ['filer' => 'guest']);
-$routes->post('login', 'User::login', ['filer' => 'guest']);
-$routes->get('logout', 'User::logout', ['filter'=> 'isLoggedIn']);
-$routes->get('users/(:num)/profile', 'User::profile/$1', ['filter' => 'isLoggedIn']);
-$routes->post('users/(:num)/profile', 'User::update/$1', ['filter' => 'isLoggedIn']);
-$routes->post('users/password', 'User::changePassword', ['filter' => 'isLoggedIn']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

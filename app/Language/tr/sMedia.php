@@ -1,0 +1,23 @@
+<?php
+return [
+	'socialMedia' => 'Sosyal Medya Pazarlama Hizmetleri',
+	'socialMediaD' => 'Facebook, Twitter, Instagram ve diğer pek çok ağ, milyonlarca - aslında milyarlarca - bizim için günlük yaşamın bir parçası. Facebook\'un her yerde kullanımı, dünya nüfusunun dörtte birinden fazlasını kapsıyor - bu, 2 milyardan fazla aktif kullanıcı anlamına geliyor.',
+	's1' => 'Marka İzleme',
+	's2' => 'Sosyal Medya Yönetimi',
+	's3' => 'Kurulum ve Özel Profil Tasarımı',
+	's4' => 'Sosyal Medya Yarışmaları',
+	'proTools' => 'İşletmeniz için Profesyonel Araçlar',
+	'pro1' => 'Marka İzleme',
+	'pro1D' => 'Markanız ve Ürünleriniz, Rakipleriniz, Sektörünüzle ilgili açıklamaları takip edin. Markanızın çevrimiçi itibarını yönetin, içgörülerden bahsedin ve satışları artırın.',
+	'pro2' => 'Sosyal Medya Yarışmaları',
+	'pro2D' => 'Müşterilerle çevrimiçi etkileşim kurmak mı istiyorsunuz? Sosyal medya, müşterilerinizi dahil etmenin ve hedef kitlenizle gerçekten konuşmalar oluşturmanın harika bir yolu olabilir. Ancak bu etkileşimi gerçekten başlatmak için bir şeye ihtiyacınız var.',
+	'pro3' => 'Sosyal Medya Yönetimi',
+	'pro3D' => 'Sosyal ağların iş potansiyeli çok büyük. Markalar, marka bilinirliğini artırmaktan mağaza ziyaretlerini artırmaya kadar pazarlama dönüşüm hunisinde hedeflerini başarılı bir şekilde gerçekleştirmek için sosyal medya platformlarından yararlanabilir.',
+	'pro4' => 'Kurulum ve Özel Profil Tasarımı',
+	'pro4D' => 'Temel profil kurulumundan, geliştirilmiş grafik ve tasarım öğelerine ve devam eden içerik tanıtımına kadar, işletmeniz için şirketinizi iyi temsil eden ve istediğiniz müşterileri çeken sosyal medya profilleri oluşturuyoruz.',
+	'smp' => 'Sosyal Medya Tanıtımı',
+	'smp1' => 'İçerik pazarlama',
+	'smp1D' => 'Geleneksel pazarlama her geçen dakika daha az etkili hale geliyor; İleri görüşlü bir pazarlamacı olarak, daha iyi bir yol olması gerektiğini biliyorsunuz.',
+	'smp2' => 'Harika Sıralamalar',
+	'smp2D' => 'Bildiğiniz gibi, SEO, arama motoru optimizasyonu anlamına gelir; bu, web sayfalarının bir arama motorunda sıralanma olasılığını artırma anlamına gelir. Ancak dürüst olalım: Bu noktada, bu gerçekten sadece Google anlamına geliyor.',
+];

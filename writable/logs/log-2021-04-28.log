@@ -1,0 +1,22 @@
+CRITICAL - 2021-04-28 16:30:40 --> Undefined variable: title
+#0 /Applications/MAMP/htdocs/liveApp/app/Views/emailMarketing.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/liveApp/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/liveApp/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/liveApp/system/Common.php(1217): CodeIgniter\View\View->render('emailMarketing', Array, true)
+#4 /Applications/MAMP/htdocs/liveApp/app/Controllers/Page.php(33): view('emailMarketing')
+#5 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(936): App\Controllers\Page->emailMarketing()
+#6 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#7 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-28 17:22:04 --> Undefined variable: title
+#0 /Applications/MAMP/htdocs/liveApp/app/Views/contact.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 3, Array)
+#1 /Applications/MAMP/htdocs/liveApp/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/liveApp/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/liveApp/system/Common.php(1217): CodeIgniter\View\View->render('contact', Array, true)
+#4 /Applications/MAMP/htdocs/liveApp/app/Controllers/Page.php(42): view('contact')
+#5 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(936): App\Controllers\Page->socialMediaMarketing()
+#6 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#7 /Applications/MAMP/htdocs/liveApp/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/liveApp/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

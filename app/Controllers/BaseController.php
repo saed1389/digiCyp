@@ -29,7 +29,7 @@ class BaseController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = ['form', 'auth'];
+	protected $helpers = [];
 	protected $session = null;
 	protected $db;
 
@@ -44,12 +44,16 @@ class BaseController extends Controller
 	{
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-
+		$session = \Config\Services::session();
+		$language = \Config\Services::language();
+		$language->setLocale($session->lang);
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
-		//$config = (object)['sessionCookieName' => 'digicyp_cookie'];
+		// E.g.: $this->session = \Config\Services::session();
 		$this->db = Database::connect ();
 		$this->session = Services::session();
 	}
+	
+	
 }

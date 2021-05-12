@@ -1,53 +1,90 @@
-<?php namespace App\Controllers;
+<?php
 
-class Page extends BaseController {
-	
-	public function about($param = "Guest") {
+namespace App\Controllers;
+
+class Page extends BaseController
+{
+	public function about()
+	{
 		$data = [
-			'name' => 'Saed Ghaffari',
-			'title' => 'About Us',
+			'title' =>  lang ('seoPage.aboutT'),
+			'description' => lang ('seoPage.aboutD')
 		];
-		echo view ('about', $data);
+		return view('about', $data);
 	}
 	
 	public function contact(){
-		$email = \Config\Services::email();
+		//$email = \Config\Services::email();
 		$data = array (
 			'email'     => 'saed.1389@gmail.com',
-			'title'     => 'Contact Us',
+			'title'     => lang ('seoPage.contactT'),
+			'description' => lang ('seoPage.contactD'),
 			'validator' => null,
 		);
-		if ($this->request->getMethod () == 'post') {
-			if (!$this->validate ( [
-				'email' => 'required|valid_email',
-				'name' => 'required',
-				'message' => 'required|min_length[10]'
-			] )) {
-				$data[ 'validator' ] = $this->validator;
-			} else {
-				$email->setFrom ( $this->request->getPost ( 'email' ) );
-				$email->setTo ( 'saed.1389@gmail.com' );
-				$email->setSubject ( $this->request->getPost ( 'name' ) );
-				$email->setMessage ( $this->request->getPost ( 'message' ) );
-				$email->send ();
-				$this->session->setFlashData('message', 'Email Sent Successfully');
-				return redirect ()->to ( '/' );
-			}
-		}
-			$data['c_f'] = [
-					'form_open' => form_open ('/contact'),
-					'email'     => form_input (['type'=>'email', 'class'=>'form-control', 'name'=>'email', 'value' => $this->request->getPost ('email')]),
-					'name'      => form_input (['type'=>'text', 'class'=>'form-control', 'name'=>'name', 'value' => $this->request->getPost ('name')]),
-					'message'   => form_textarea (['class'=>'form-control', 'name'=>'message', 'value'=> $this->request->getPost ('message')]),
-					'form_close'=> form_close (),
-			];
 		return view ('contact', $data);
 	}
-	public function register() {
-		return view ('register');
-	}
-	public function login() {
-		return view ('login');
-	}
 	
+	public function localSeo() {
+		$date = [
+			'title' => lang ('seoPage.localT'),
+			'description' => lang ('seoPage.localD')
+		] ;
+		return view ('localSeo', $date);
+	}
+	public function emailMarketing() {
+		$date = [
+			'title' => lang ('seoPage.emailT'),
+			'description' => lang ('seoPage.emailD')
+		] ;
+		return view ('emailMarketing', $date);
+	}
+	public function socialMediaMarketing() {
+		$date = [
+			'title' => lang ('seoPage.socialT'),
+			'description' => lang ('seoPage.socialD')
+		];
+		return view ('socialMediaMarketing', $date);
+	}
+	public function SearchEO() {
+		$date = [
+			'title' => lang ('seoPage.seoT'),
+			'description' => lang ('seoPage.seoD')
+		];
+		return view ('SearchEO', $date);
+	}
+	public function webDesign() {
+		$date = [
+			'title' => lang ('seoPage.webT'),
+			'description' => lang ('seoPage.webD')
+		];
+		return view ('webDesign', $date);
+	}
+	public function videoEdit() {
+		$date = [
+			'title' => lang ('seoPage.videoT'),
+			'description' => lang ('seoPage.videoD')
+		];
+		return view ('videoEdit', $date);
+	}
+	public function services() {
+		$date = [
+			'title' => lang ('seoPage.serviceT'),
+			'description' => lang ('seoPage.serviceD')
+		];
+		return view ('services', $date);
+	}
+	public function references() {
+		$date = [
+			'title' => lang ('seoPage.refT'),
+			'description' => lang ('seoPage.refD')
+		];
+		return view ('references', $date);
+	}
+	public function blog() {
+		$date = [
+			'title' => lang ('seoPage.blogT'),
+			'description' => lang ('seoPage.blogD')
+		];
+		return view ('blog', $date);
+	}
 }

@@ -1,0 +1,20 @@
+<?php
+return [
+	'slogan' => 'The Best Email Marketing Strategy',
+	'sloganD' => 'Why Choosing The Best Email Marketing Service is Important?',
+	'd1' => 'Email marketing is when you send a commercial email message to your ‘email subscribers’ — contacts who have signed up to your email list and given express permission to receive email communications from you.',
+	'd2' => 'Email marketing is used to inform, drive sales, and build a community around your brand (e.g. with a newsletter).',
+	'd3' => 'Modern email marketing has moved away from one-size-fits-all mass mailings and instead  focuses on consent, segmentation, and personalization.',
+	'tellUs' => 'Tell Us About Your Project',
+	'tellUsD' => 'Claritas est etiam processus dynamicus, qui sequitur mutationem.',
+	'emailService' => 'Unrivaled Levels of Service',
+	'emailServiceD' => '&nbsp;',
+	'emailStrategy' => 'The Best Email Marketing Strategy',
+	'emailStrategyD' => '&nbsp;',
+	'emailTemp' => 'Email Template Design',
+	'emailTempD' => '&nbsp;',
+	'emailTracing' => 'Tracking & <br> Reporting',
+	'emailTracingD' => '&nbsp;',
+	'emailMarketing' => 'Email Marketing Campaigns',
+	'emailMarketingD' => '&nbsp;',
+];
